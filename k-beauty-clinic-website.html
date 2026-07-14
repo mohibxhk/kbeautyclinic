@@ -1,0 +1,474 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>K Beauty Clinic — Glow-Boosting Skincare &amp; Beauty | Carlow, Ireland</title>
+<meta name="description" content="K Beauty Clinic — 5-star beauty salon in Carlow. Glow-boosting facials, skincare, lashes, brows and nails by a friendly, professional team. Book your glow-up today." />
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,600&family=Figtree:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --jade:#3f9e86; --jade-d:#2f7d68; --jade-dd:#1f5749; --mint:#8fd3bf;
+  --peach:#f0a68e; --peach-d:#e08670; --blush:#fbe4da; --mint-l:#e0f4ee;
+  --cream:#f5faf7; --cream-2:#e9f4ef;
+  --ink:#20342e; --muted:#63817a; --line:rgba(47,125,104,.14);
+  --white:#fff; --shadow:0 22px 52px -22px rgba(31,87,73,.34); --radius:22px;
+}
+*{margin:0;padding:0;box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{font-family:'Figtree',system-ui,sans-serif;color:var(--ink);background:var(--cream);line-height:1.6;overflow-x:hidden}
+h1,h2,h3,.disp{font-family:'Fraunces',Georgia,serif;font-weight:600;line-height:1.06;letter-spacing:-.01em}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:1180px;margin:0 auto;padding:0 24px}
+.btn{display:inline-flex;align-items:center;gap:9px;font-weight:700;font-size:15px;padding:14px 28px;border-radius:999px;border:0;cursor:pointer;transition:.25s;font-family:'Figtree',sans-serif}
+.btn-primary{background:linear-gradient(135deg,var(--jade),var(--jade-d));color:#fff;box-shadow:0 14px 26px -12px rgba(63,158,134,.6)}
+.btn-primary:hover{transform:translateY(-3px);box-shadow:0 20px 34px -12px rgba(63,158,134,.8)}
+.btn-ghost{background:rgba(255,255,255,.85);color:var(--jade-d);border:1.5px solid var(--line)}
+.btn-ghost:hover{background:#fff;transform:translateY(-3px)}
+.btn-peach{background:linear-gradient(135deg,var(--peach),var(--peach-d));color:#fff;box-shadow:0 14px 26px -12px rgba(240,166,142,.6)}
+.btn-peach:hover{transform:translateY(-3px)}
+
+header{position:sticky;top:0;z-index:60;backdrop-filter:blur(14px);background:rgba(245,250,247,.82);border-bottom:1px solid transparent;transition:.3s}
+header.scrolled{border-bottom:1px solid var(--line);background:rgba(245,250,247,.96)}
+nav{display:flex;align-items:center;justify-content:space-between;height:78px}
+.logo{display:flex;align-items:center;gap:11px;font-family:'Fraunces';font-weight:600;font-size:22px;color:var(--jade-dd)}
+.logo .mark{width:44px;height:44px;border-radius:14px;background:linear-gradient(135deg,var(--jade),var(--mint));display:grid;place-items:center;box-shadow:0 8px 18px -6px rgba(63,158,134,.6)}
+.navlinks{display:flex;align-items:center;gap:30px}
+.navlinks a{font-weight:600;font-size:15px;color:var(--ink);opacity:.82;transition:.2s}
+.navlinks a:hover{opacity:1;color:var(--jade-d)}
+.nav-cta{display:flex;gap:12px;align-items:center}
+.menu-btn{display:none;background:none;border:0;cursor:pointer}
+@media(max-width:900px){.navlinks{display:none}.menu-btn{display:block}}
+
+.hero{position:relative;padding:66px 0 90px;overflow:hidden}
+.hero-bg{position:absolute;inset:0;z-index:-2;background:
+  radial-gradient(56% 56% at 84% 10%,rgba(143,211,191,.34),transparent 62%),
+  radial-gradient(46% 46% at 8% 40%,rgba(240,166,142,.18),transparent 60%)}
+.dew{position:absolute;z-index:-1;border-radius:50%;background:radial-gradient(circle at 34% 30%,rgba(255,255,255,.95),rgba(224,244,238,.4));opacity:.7;animation:bob 8s ease-in-out infinite}
+@keyframes bob{0%,100%{transform:translateY(0)}50%{transform:translateY(-22px)}}
+.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:50px;align-items:center}
+@media(max-width:900px){.hero-grid{grid-template-columns:1fr;gap:36px}}
+.eyebrow{display:inline-flex;align-items:center;gap:9px;background:#fff;border:1px solid var(--line);padding:8px 15px;border-radius:999px;font-weight:700;font-size:13px;color:var(--jade-d);box-shadow:var(--shadow);margin-bottom:22px}
+.eyebrow .dot{width:8px;height:8px;border-radius:50%;background:#22c55e;box-shadow:0 0 0 4px rgba(34,197,94,.2)}
+h1{font-size:clamp(44px,6.6vw,68px);color:var(--jade-dd)}
+h1 em{font-style:italic;color:var(--peach-d)}
+.hero p.lead{font-size:19px;color:var(--muted);margin:20px 0 30px;max-width:520px}
+.hero-cta{display:flex;gap:14px;flex-wrap:wrap}
+.hero-stats{display:flex;gap:32px;margin-top:40px;flex-wrap:wrap}
+.hero-stats .n{font-family:'Fraunces';font-size:33px;color:var(--jade-dd)}
+.hero-stats .l{font-size:13px;color:var(--muted);font-weight:600}
+.stars{color:#f5b301;letter-spacing:2px}
+
+.hero-card{background:#fff;border-radius:28px;padding:11px;box-shadow:var(--shadow);position:relative;transform:rotate(1.5deg);transition:.4s}
+.hero-card:hover{transform:rotate(0)}
+.hero-card .photo{height:330px;border-radius:22px;background:linear-gradient(150deg,var(--jade-dd),var(--jade) 55%,var(--mint));position:relative;overflow:hidden;display:grid;place-items:center}
+.hero-card .photo .cta-emoji{font-size:82px;filter:drop-shadow(0 12px 22px rgba(0,0,0,.2))}
+.hero-card .cap{display:flex;align-items:center;justify-content:space-between;padding:16px 14px 10px}
+.hero-card .cap .who{font-weight:800}
+.hero-card .cap .rev{font-size:13px;color:var(--muted)}
+.badge-float{position:absolute;background:#fff;border-radius:16px;padding:12px 15px;box-shadow:var(--shadow);font-weight:700;font-size:13px;display:flex;align-items:center;gap:9px}
+.badge-float.b1{bottom:-18px;left:-18px;color:var(--jade-d)}
+.badge-float.b2{top:20px;right:-16px;color:var(--peach-d)}
+.badge-float .ic{width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:var(--mint-l)}
+
+.trust{background:var(--jade-dd);color:#d9f2ea;padding:16px 0;overflow:hidden;white-space:nowrap}
+.trust-track{display:inline-flex;gap:48px;animation:marq 24s linear infinite;font-weight:600;font-size:14px}
+.trust-track span{opacity:.9;display:inline-flex;gap:10px;align-items:center}
+@keyframes marq{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+
+section{padding:90px 0}
+.sec-head{text-align:center;max-width:660px;margin:0 auto 54px}
+.sec-head .kick{color:var(--peach-d);font-weight:800;letter-spacing:.2em;text-transform:uppercase;font-size:12px}
+.sec-head h2{font-size:clamp(34px,4.8vw,50px);color:var(--jade-dd);margin:12px 0}
+.sec-head p{color:var(--muted);font-size:17px}
+
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:24px}
+@media(max-width:900px){.svc-grid{grid-template-columns:1fr}}
+.svc{background:#fff;border:1px solid var(--line);border-radius:var(--radius);padding:32px;transition:.3s;position:relative;overflow:hidden}
+.svc:hover{transform:translateY(-8px);box-shadow:var(--shadow);border-color:var(--mint)}
+.svc .ic{width:58px;height:58px;border-radius:50%;background:linear-gradient(135deg,var(--mint-l),#fff);display:grid;place-items:center;margin-bottom:18px;font-size:26px;border:1px solid var(--line)}
+.svc h3{font-size:23px;color:var(--jade-dd);margin-bottom:8px}
+.svc p{color:var(--muted);font-size:15px;margin-bottom:14px}
+.svc .price{font-weight:800;color:var(--jade-d);font-size:14px}
+.svc .price small{color:var(--muted);font-weight:600}
+.svc .tag{position:absolute;top:18px;right:18px;background:var(--peach);color:#fff;font-size:10px;font-weight:800;letter-spacing:.06em;padding:5px 10px;border-radius:999px;text-transform:uppercase}
+
+.about{display:grid;grid-template-columns:1fr 1fr;gap:56px;align-items:center}
+@media(max-width:900px){.about{grid-template-columns:1fr}}
+.about-visual{background:linear-gradient(150deg,var(--jade-d),var(--jade-dd));border-radius:26px;padding:46px;color:#fff;position:relative;overflow:hidden;box-shadow:var(--shadow)}
+.about-visual h3{font-size:32px;margin-bottom:14px;color:var(--mint-l)}
+.about-visual .quote{font-family:'Fraunces';font-style:italic;font-size:22px;opacity:.97;border-left:3px solid var(--peach);padding-left:18px;margin:22px 0}
+.chips{display:flex;flex-wrap:wrap;gap:10px;margin-top:22px}
+.chip{background:rgba(255,255,255,.13);border:1px solid rgba(255,255,255,.26);padding:8px 14px;border-radius:999px;font-weight:600;font-size:13px}
+.about-txt h2{font-size:clamp(30px,4.2vw,46px);color:var(--jade-dd);margin-bottom:16px}
+.about-txt p{color:var(--muted);margin-bottom:16px;font-size:16px}
+.feat{display:flex;gap:14px;margin-bottom:16px}
+.feat .fic{flex:0 0 44px;height:44px;border-radius:50%;background:var(--mint-l);display:grid;place-items:center;color:var(--jade-d);font-weight:800}
+.feat b{display:block;color:var(--ink)}
+.feat span{color:var(--muted);font-size:14px}
+
+.reviews{background:linear-gradient(180deg,#fff,var(--cream))}
+.rev-hero{max-width:720px;margin:0 auto;background:#fff;border:1px solid var(--line);border-radius:26px;padding:44px;text-align:center;box-shadow:var(--shadow);position:relative}
+.rev-hero .mark-q{font-family:'Fraunces';font-size:70px;color:var(--mint);line-height:.4;height:34px}
+.rev-hero p{font-family:'Fraunces';font-size:24px;font-style:italic;color:var(--jade-dd);margin:10px 0 22px}
+.rev-hero .stars{font-size:22px;margin-bottom:14px}
+.rev-hero .who{display:flex;align-items:center;justify-content:center;gap:12px}
+.rev-hero .av{width:46px;height:46px;border-radius:50%;background:linear-gradient(135deg,var(--jade),var(--peach));display:grid;place-items:center;color:#fff;font-weight:800}
+.rev-hero .who b{display:block}
+.rev-hero .who span{font-size:12px;color:var(--muted)}
+.rev-summary{text-align:center;margin-bottom:38px}
+.rev-summary .big{font-family:'Fraunces';font-size:60px;color:var(--jade-dd);line-height:1}
+
+.book{background:linear-gradient(150deg,var(--jade-dd),var(--jade-d));color:#dff3ec;position:relative;overflow:hidden}
+.book .wrap{position:relative;z-index:2}
+.book-grid{display:grid;grid-template-columns:.9fr 1.1fr;gap:48px;align-items:start}
+@media(max-width:900px){.book-grid{grid-template-columns:1fr}}
+.book-left h2{font-size:clamp(32px,4.6vw,50px);color:#fff;margin-bottom:16px}
+.book-left h2 em{font-style:italic;color:var(--mint)}
+.book-left p{opacity:.88;margin-bottom:26px;font-size:16px}
+.book-info{display:flex;flex-direction:column;gap:16px}
+.book-info .row{display:flex;gap:14px;align-items:center}
+.book-info .ic{width:46px;height:46px;border-radius:12px;background:rgba(255,255,255,.12);display:grid;place-items:center;flex:0 0 46px}
+.book-info b{display:block;color:#fff}
+.book-info span{opacity:.84;font-size:14px}
+.form{background:#fff;border-radius:24px;padding:34px;color:var(--ink);box-shadow:var(--shadow)}
+.form h3{color:var(--jade-dd);font-size:26px;margin-bottom:6px}
+.form .sub{color:var(--muted);font-size:14px;margin-bottom:22px}
+.fg{margin-bottom:16px}
+.fg label{display:block;font-weight:700;font-size:13px;margin-bottom:7px}
+.fg input,.fg select,.fg textarea{width:100%;padding:13px 15px;border:1.5px solid var(--line);border-radius:12px;font-family:inherit;font-size:15px;background:var(--cream);transition:.2s}
+.fg input:focus,.fg select:focus,.fg textarea:focus{outline:0;border-color:var(--jade);background:#fff;box-shadow:0 0 0 4px rgba(63,158,134,.14)}
+.frow{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+@media(max-width:520px){.frow{grid-template-columns:1fr}}
+.form .btn{width:100%;justify-content:center;margin-top:8px}
+.form .err{color:#dc2626;font-size:12px;font-weight:700;margin-top:5px;display:none}
+.confirm{display:none;text-align:center;padding:12px 0}
+.confirm .check{width:80px;height:80px;border-radius:50%;background:linear-gradient(135deg,var(--jade),var(--mint));display:grid;place-items:center;margin:0 auto 18px;color:#fff;font-size:40px;animation:pop .5s cubic-bezier(.2,1.4,.4,1)}
+@keyframes pop{from{transform:scale(0)}to{transform:scale(1)}}
+.confirm h3{color:var(--jade-dd);font-size:26px;margin-bottom:10px}
+.confirm .summary{background:var(--cream);border:1px solid var(--line);border-radius:12px;padding:16px;text-align:left;font-size:14px;margin:16px 0}
+.confirm .summary div{display:flex;justify-content:space-between;padding:5px 0;border-bottom:1px dashed var(--line)}
+.confirm .summary div:last-child{border:0}
+.confirm .summary span:first-child{color:var(--muted);font-weight:600}
+.confirm .summary span:last-child{font-weight:700;text-align:right}
+
+footer{background:#14322a;color:#a9cdc2;padding:60px 0 30px}
+.foot-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:40px;margin-bottom:40px}
+@media(max-width:900px){.foot-grid{grid-template-columns:1fr}}
+footer h4{color:#fff;font-family:'Figtree';font-weight:800;margin-bottom:16px;font-size:14px}
+footer a,footer p{color:#93c3b6;font-size:14px;display:block;margin-bottom:9px;transition:.2s}
+footer a:hover{color:#fff}
+.foot-logo{display:flex;align-items:center;gap:11px;font-family:'Fraunces';font-weight:600;font-size:21px;color:#fff;margin-bottom:14px}
+.foot-bottom{border-top:1px solid rgba(255,255,255,.1);padding-top:22px;text-align:center;font-size:13px;color:#7fae9f}
+.foot-bottom a{color:var(--mint);font-weight:600;display:inline}
+.foot-bottom a:hover{color:#fff}
+
+.chat-fab{position:fixed;bottom:24px;right:24px;z-index:90;width:64px;height:64px;border-radius:50%;border:0;cursor:pointer;background:linear-gradient(135deg,var(--jade),var(--jade-d));box-shadow:0 16px 34px -10px rgba(63,158,134,.7);display:grid;place-items:center;transition:.3s;animation:pulse 2.6s infinite}
+.chat-fab:hover{transform:scale(1.08)}
+@keyframes pulse{0%{box-shadow:0 16px 34px -10px rgba(63,158,134,.7),0 0 0 0 rgba(63,158,134,.45)}70%{box-shadow:0 16px 34px -10px rgba(63,158,134,.7),0 0 0 16px rgba(63,158,134,0)}100%{box-shadow:0 16px 34px -10px rgba(63,158,134,.7),0 0 0 0 rgba(63,158,134,0)}}
+.chat-panel{position:fixed;bottom:100px;right:24px;z-index:91;width:380px;max-width:calc(100vw - 40px);height:560px;max-height:calc(100vh - 140px);background:#fff;border-radius:24px;box-shadow:0 30px 70px -20px rgba(31,87,73,.5);display:flex;flex-direction:column;overflow:hidden;transform:translateY(20px) scale(.96);opacity:0;pointer-events:none;transition:.3s}
+.chat-panel.open{transform:none;opacity:1;pointer-events:auto}
+.chat-head{background:linear-gradient(135deg,var(--jade-d),var(--jade-dd));color:#fff;padding:18px 20px;display:flex;align-items:center;gap:12px}
+.chat-head .av{width:44px;height:44px;border-radius:50%;background:rgba(255,255,255,.18);display:grid;place-items:center;font-size:22px;position:relative}
+.chat-head .av::after{content:"";position:absolute;bottom:1px;right:1px;width:11px;height:11px;border-radius:50%;background:#4ade80;border:2px solid var(--jade-d)}
+.chat-head b{font-size:16px}
+.chat-head span{font-size:12px;opacity:.85}
+.chat-head .x{margin-left:auto;background:rgba(255,255,255,.15);border:0;color:#fff;width:32px;height:32px;border-radius:9px;cursor:pointer;font-size:18px}
+.chat-body{flex:1;overflow-y:auto;padding:18px;background:var(--cream);display:flex;flex-direction:column;gap:12px}
+.msg{max-width:82%;padding:11px 15px;border-radius:16px;font-size:14px;line-height:1.5;animation:msgin .3s ease}
+@keyframes msgin{from{opacity:0;transform:translateY(6px)}to{opacity:1;transform:none}}
+.msg.bot{background:#fff;border:1px solid var(--line);border-bottom-left-radius:5px;align-self:flex-start;box-shadow:0 4px 12px -8px rgba(31,87,73,.3)}
+.msg.user{background:linear-gradient(135deg,var(--jade),var(--jade-d));color:#fff;border-bottom-right-radius:5px;align-self:flex-end}
+.msg.bot b{color:var(--jade-d)}.msg.bot a{color:var(--jade-d);font-weight:700}
+.quick{display:flex;flex-wrap:wrap;gap:8px;padding:0 18px 12px;background:var(--cream)}
+.quick button{background:#fff;border:1.5px solid var(--line);color:var(--jade-d);font-weight:600;font-size:12.5px;padding:8px 13px;border-radius:999px;cursor:pointer;transition:.2s;font-family:inherit}
+.quick button:hover{background:var(--jade);color:#fff;border-color:var(--jade)}
+.chat-input{display:flex;gap:8px;padding:14px;border-top:1px solid var(--line);background:#fff}
+.chat-input input{flex:1;padding:12px 15px;border:1.5px solid var(--line);border-radius:999px;font-family:inherit;font-size:14px}
+.chat-input input:focus{outline:0;border-color:var(--jade)}
+.chat-input button{width:44px;height:44px;border-radius:50%;border:0;background:linear-gradient(135deg,var(--jade),var(--jade-d));color:#fff;cursor:pointer;display:grid;place-items:center;flex:0 0 44px}
+.typing{display:flex;gap:4px;padding:14px 16px}
+.typing span{width:7px;height:7px;border-radius:50%;background:var(--muted);animation:blink 1.2s infinite}
+.typing span:nth-child(2){animation-delay:.2s}.typing span:nth-child(3){animation-delay:.4s}
+@keyframes blink{0%,60%,100%{opacity:.3}30%{opacity:1}}
+
+.reveal{opacity:0;transform:translateY(28px);transition:.7s cubic-bezier(.2,.7,.3,1)}
+.reveal.in{opacity:1;transform:none}
+</style>
+</head>
+<body>
+
+<header id="top">
+  <div class="wrap">
+    <nav>
+      <a class="logo" href="#top">
+        <span class="mark"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 3c1 4 4 5 7 6-3 1-6 2-7 6-1-4-4-5-7-6 3-1 6-2 7-6z"/></svg></span>
+        K Beauty Clinic
+      </a>
+      <div class="navlinks">
+        <a href="#services">Services</a>
+        <a href="#about">About</a>
+        <a href="#reviews">Reviews</a>
+        <a href="#book">Book</a>
+      </div>
+      <div class="nav-cta">
+        <a href="tel:+353838684721" class="btn btn-ghost">📞 083 868 4721</a>
+        <a href="#book" class="btn btn-primary">Book Now</a>
+      </div>
+      <button class="menu-btn" onclick="document.querySelector('.navlinks').style.display=(this._o?'none':'flex');this._o=!this._o;">
+        <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#1f5749" stroke-width="2.2"><path d="M3 6h18M3 12h18M3 18h18"/></svg>
+      </button>
+    </nav>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero">
+  <div class="hero-bg"></div>
+  <div class="dew" style="width:110px;height:110px;top:15%;left:6%"></div>
+  <div class="dew" style="width:60px;height:60px;top:63%;left:13%;animation-delay:1.3s"></div>
+  <div class="dew" style="width:84px;height:84px;top:20%;right:9%;animation-delay:.7s"></div>
+  <div class="wrap">
+    <div class="hero-grid">
+      <div>
+        <div class="eyebrow"><span class="dot"></span> 5.0 ★ Beauty Clinic · Carlow, Ireland</div>
+        <h1>Glowing skin,<br><em>starts here.</em></h1>
+        <p class="lead">K Beauty Clinic is Carlow's home of glow-boosting facials and immaculate beauty treatments — where a friendly, professional team helps you look and feel your best.</p>
+        <div class="hero-cta">
+          <a href="#book" class="btn btn-primary">✨ Book Your Glow-Up</a>
+          <a href="#services" class="btn btn-ghost">View Menu</a>
+        </div>
+        <div class="hero-stats">
+          <div><div class="n">5.0 ★</div><div class="l">Google Rated</div></div>
+          <div><div class="n">Immaculate</div><div class="l">at their craft</div></div>
+          <div><div class="n">Flexible</div><div class="l">appointment times</div></div>
+        </div>
+      </div>
+      <div style="position:relative">
+        <div class="hero-card">
+          <div class="photo"><div class="cta-emoji">🌿</div></div>
+          <div class="cap">
+            <div><div class="who">K Beauty Clinic</div><div class="rev">Beauty salon · Tullow St, Carlow</div></div>
+            <div class="stars">★★★★★</div>
+          </div>
+          <div class="badge-float b1"><span class="ic">💧</span> Glow-boosting facials</div>
+          <div class="badge-float b2"><span class="ic">👩</span> Friendly expert team</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="trust">
+  <div class="trust-track">
+    <span>💧 Glow-Boosting Facials</span><span>✨ Advanced Skincare</span><span>👁️ Lashes &amp; Brows</span><span>💅 Nails &amp; Beauty</span><span>👩 Friendly Expert Team</span><span>⭐ Perfect 5.0 Rating</span><span>📍 Carlow, Ireland</span>
+    <span>💧 Glow-Boosting Facials</span><span>✨ Advanced Skincare</span><span>👁️ Lashes &amp; Brows</span><span>💅 Nails &amp; Beauty</span><span>👩 Friendly Expert Team</span><span>⭐ Perfect 5.0 Rating</span><span>📍 Carlow, Ireland</span>
+  </div>
+</div>
+
+<!-- SERVICES -->
+<section id="services">
+  <div class="wrap">
+    <div class="sec-head reveal">
+      <div class="kick">The Menu</div>
+      <h2>Treatments for healthy, glowing skin</h2>
+      <p>Skincare-focused facials and beauty treatments in a calm, spotless Carlow clinic.</p>
+    </div>
+    <div class="svc-grid">
+      <div class="svc reveal"><span class="tag">Signature</span><div class="ic">💧</div><h3>Glow Facial</h3><p>A deeply cleansing, hydrating facial for fresh, dewy, healthy-looking skin — our signature glow.</p><div class="price">from €50</div></div>
+      <div class="svc reveal"><div class="ic">✨</div><h3>Advanced Skincare</h3><p>Targeted treatments for brightening, refining and refreshing — tailored to your skin's needs.</p><div class="price">from €65</div></div>
+      <div class="svc reveal"><div class="ic">👁️</div><h3>Lashes</h3><p>Lash lifts, tints and extensions for a wide-awake, beautifully defined look.</p><div class="price">from €40</div></div>
+      <div class="svc reveal"><div class="ic">🖌️</div><h3>Brows</h3><p>Shaping, lamination and tinting to frame your face with fuller, defined brows.</p><div class="price">from €20</div></div>
+      <div class="svc reveal"><div class="ic">💅</div><h3>Nails</h3><p>Manicures, gel and shellac finished to perfection — neat, glossy and long-lasting.</p><div class="price">from €25</div></div>
+      <div class="svc reveal"><div class="ic">🌸</div><h3>Waxing &amp; Tinting</h3><p>Smooth waxing and tinting to keep you looking polished from head to toe.</p><div class="price">from €12</div></div>
+    </div>
+    <p style="text-align:center;color:var(--muted);font-size:13px;margin-top:24px">Sample prices for this demo — final pricing confirmed at booking. Ask us about treatment packages.</p>
+  </div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" style="background:linear-gradient(180deg,var(--cream),#fff)">
+  <div class="wrap">
+    <div class="about">
+      <div class="about-visual reveal">
+        <h3>Immaculate, every time ✨</h3>
+        <p style="opacity:.9">A friendly, professional team obsessed with detail — because great skin and great beauty are all in the finish.</p>
+        <div class="quote">"All the girls are absolutely amazing! Very friendly, professional and immaculate at their job. One of the best beauty salons around."</div>
+        <div class="chips">
+          <span class="chip">⭐ 5.0 Rated</span>
+          <span class="chip">💧 Glow-Focused</span>
+          <span class="chip">🤍 Friendly &amp; Pro</span>
+          <span class="chip">📍 Tullow St, Carlow</span>
+        </div>
+      </div>
+      <div class="about-txt reveal">
+        <h2>Your glow, in expert hands</h2>
+        <p>K Beauty Clinic on Tullow Street brings a skincare-first approach to beauty in Carlow. From a deeply hydrating glow facial to flawless lashes, brows and nails, the team looks after you with warmth, care and immaculate attention to detail.</p>
+        <div class="feat"><div class="fic">✓</div><div><b>Immaculate work</b><span>Precision and polish in every single treatment.</span></div></div>
+        <div class="feat"><div class="fic">✓</div><div><b>Friendly &amp; welcoming</b><span>A warm, relaxed clinic where you're always looked after.</span></div></div>
+        <div class="feat"><div class="fic">✓</div><div><b>Skincare-first</b><span>Treatments designed for healthy, glowing, feel-good skin.</span></div></div>
+        <a href="#book" class="btn btn-peach" style="margin-top:8px">Book Your Treatment</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- REVIEWS -->
+<section id="reviews" class="reviews">
+  <div class="wrap">
+    <div class="rev-summary reveal">
+      <div class="big">5.0</div>
+      <div class="stars" style="font-size:26px">★★★★★</div>
+      <p style="color:var(--muted)">Rated 5.0 on Google</p>
+    </div>
+    <div class="rev-hero reveal">
+      <div class="mark-q">"</div>
+      <div class="stars">★★★★★</div>
+      <p>All the girls are absolutely amazing! Very friendly, professional and immaculate at their job. One of the best beauty salons around — I'm glad to recommend it!</p>
+      <div class="who"><div class="av">G</div><div><b>Gabi Gerss</b><span>Google Review</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- BOOKING -->
+<section id="book" class="book">
+  <div class="wrap">
+    <div class="book-grid">
+      <div class="book-left reveal">
+        <h2>Book your <em>glow-up</em></h2>
+        <p>Choose your treatment and preferred time — our team will confirm your appointment. New clients always welcome!</p>
+        <div class="book-info">
+          <div class="row"><div class="ic">📞</div><div><b>Call or text</b><span>+353 83 868 4721</span></div></div>
+          <div class="row"><div class="ic">📍</div><div><b>Clinic</b><span>1a Tullow St, Carlow, R93 X0C0</span></div></div>
+          <div class="row"><div class="ic">🕘</div><div><b>Hours</b><span>Flexible appointments · contact for availability</span></div></div>
+        </div>
+      </div>
+      <div class="reveal">
+        <div class="form">
+          <form id="bookForm" novalidate>
+            <h3>Request an Appointment</h3>
+            <div class="sub">Tell us what you'd like and we'll confirm your slot.</div>
+            <div class="frow">
+              <div class="fg"><label>Full Name*</label><input id="f_name" placeholder="Your name"><div class="err" id="e_name">Please enter your name</div></div>
+              <div class="fg"><label>Phone*</label><input id="f_phone" placeholder="083 123 4567"><div class="err" id="e_phone">Please enter a valid phone</div></div>
+            </div>
+            <div class="fg"><label>Email</label><input id="f_email" placeholder="you@email.com"></div>
+            <div class="frow">
+              <div class="fg"><label>Treatment*</label>
+                <select id="f_service"><option value="">Choose a treatment…</option><option>Glow Facial</option><option>Advanced Skincare</option><option>Lashes</option><option>Brows</option><option>Nails</option><option>Waxing / Tinting</option></select>
+                <div class="err" id="e_service">Please choose a treatment</div>
+              </div>
+              <div class="fg"><label>First time?</label><select id="f_freq"><option>First visit</option><option>Returning client</option></select></div>
+            </div>
+            <div class="fg"><label>Preferred Date</label><input type="date" id="f_date"></div>
+            <div class="fg"><label>Notes</label><textarea id="f_notes" rows="2" placeholder="Skin concerns, occasion, anything we should know…"></textarea></div>
+            <button type="submit" class="btn btn-primary">Request Appointment →</button>
+          </form>
+          <div class="confirm" id="confirm">
+            <div class="check">✓</div>
+            <h3>Thank you, <span id="c_name">lovely</span>!</h3>
+            <p style="color:var(--muted)">Your request is in. Here's what you asked for — we'll confirm your slot shortly. ✨</p>
+            <div class="summary" id="c_summary"></div>
+            <p style="font-size:13px;color:var(--muted)">Prefer to talk now? Call or text <b>083 868 4721</b>.</p>
+            <button class="btn btn-ghost" onclick="resetForm()" style="margin-top:6px">Book Another</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="foot-logo"><span class="mark" style="width:38px;height:38px;border-radius:11px;background:linear-gradient(135deg,var(--jade),var(--mint));display:grid;place-items:center"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round"><path d="M12 3c1 4 4 5 7 6-3 1-6 2-7 6-1-4-4-5-7-6 3-1 6-2 7-6z"/></svg></span> K Beauty Clinic</div>
+        <p>A 5-star beauty clinic on Tullow Street, Carlow. Glow-boosting facials and immaculate beauty treatments from a friendly, expert team.</p>
+        <p>💧 Skincare-first &nbsp;·&nbsp; ⭐ 5.0 on Google</p>
+      </div>
+      <div><h4>TREATMENTS</h4><a href="#services">Glow Facial</a><a href="#services">Lashes &amp; Brows</a><a href="#services">Nails</a><a href="#book">Book Now</a></div>
+      <div><h4>GET IN TOUCH</h4><a href="tel:+353838684721">📞 +353 83 868 4721</a><p>📍 1a Tullow St, Carlow, R93 X0C0</p><p>🕘 Flexible appointments</p></div>
+    </div>
+    <div class="foot-bottom">© <span id="yr"></span> K Beauty Clinic · Carlow, Ireland &nbsp;·&nbsp; Designed and developed by <a href="https://hubofecom.com" target="_blank" rel="noopener">hubofecom</a></div>
+  </div>
+</footer>
+
+<!-- CHAT -->
+<button class="chat-fab" id="chatFab" aria-label="Open chat">
+  <svg width="30" height="30" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 11.5a8.38 8.38 0 0 1-8.9 8.4 8.5 8.5 0 0 1-3.6-.8L3 21l1.9-5.5A8.38 8.38 0 0 1 21 11.5z"/></svg>
+</button>
+<div class="chat-panel" id="chatPanel">
+  <div class="chat-head">
+    <div class="av">🌿</div>
+    <div><b>Kira</b><br><span>K Beauty Clinic · online</span></div>
+    <button class="x" id="chatClose">×</button>
+  </div>
+  <div class="chat-body" id="chatBody"></div>
+  <div class="quick" id="quickReplies">
+    <button data-q="What treatments do you offer?">Treatments</button>
+    <button data-q="How much is a facial?">Pricing</button>
+    <button data-q="Tell me about your glow facial">Glow facial</button>
+    <button data-q="Where are you located?">Location</button>
+    <button data-q="I want to book an appointment">Book now</button>
+  </div>
+  <div class="chat-input">
+    <input id="chatInput" placeholder="Type your message…" autocomplete="off">
+    <button id="chatSend" aria-label="Send"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#fff" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 2L11 13M22 2l-7 20-4-9-9-4 20-7z"/></svg></button>
+  </div>
+</div>
+
+<script>
+document.getElementById('yr').textContent=new Date().getFullYear();
+addEventListener('scroll',()=>document.querySelector('header').classList.toggle('scrolled',scrollY>20));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.reveal').forEach(el=>io.observe(el));
+const d=document.getElementById('f_date'); if(d)d.min=new Date().toISOString().split('T')[0];
+
+const form=document.getElementById('bookForm');
+function fail(id,c){document.getElementById(id).style.display=c?'block':'none';return c;}
+form.addEventListener('submit',ev=>{
+  ev.preventDefault();
+  const name=f_name.value.trim(),phone=f_phone.value.trim(),service=f_service.value;let bad=false;
+  bad=fail('e_name',!name)||bad;bad=fail('e_phone',phone.replace(/\D/g,'').length<7)||bad;bad=fail('e_service',!service)||bad;
+  if(bad)return;
+  const rows={'Name':name,'Phone':phone,'Email':f_email.value.trim()||'—','Treatment':service,'Client':f_freq.value,'Date':f_date.value||'Flexible'};
+  let h='';for(const k in rows)h+=`<div><span>${k}</span><span>${rows[k]}</span></div>`;
+  c_summary.innerHTML=h;c_name.textContent=name.split(' ')[0];
+  form.style.display='none';document.getElementById('confirm').style.display='block';
+});
+function resetForm(){form.reset();form.style.display='block';document.getElementById('confirm').style.display='none';}
+
+const fab=document.getElementById('chatFab'),panel=document.getElementById('chatPanel'),body=document.getElementById('chatBody'),input=document.getElementById('chatInput');
+let greeted=false;
+function openChat(){panel.classList.add('open');fab.style.display='none';if(!greeted){greeted=true;botSay("Hi! 🌿 I'm <b>Kira</b>, the K Beauty Clinic assistant. I can help with treatments, pricing, hours or booking. How can I help you glow?");}input.focus();}
+function closeChat(){panel.classList.remove('open');fab.style.display='grid';}
+fab.onclick=openChat;document.getElementById('chatClose').onclick=closeChat;
+function addMsg(t,w){const m=document.createElement('div');m.className='msg '+w;m.innerHTML=t;body.appendChild(m);body.scrollTop=body.scrollHeight;}
+function userSay(t){addMsg(t,'user');}function botSay(t){addMsg(t,'bot');}
+function botTyping(cb){const t=document.createElement('div');t.className='msg bot typing';t.innerHTML='<span></span><span></span><span></span>';body.appendChild(t);body.scrollTop=body.scrollHeight;setTimeout(()=>{t.remove();cb();},650+Math.random()*450);}
+const KB=[
+ {k:['service','offer','treatment','do you','types','menu','what do'],a:"Our treatments include 💧 <b>Glow facials</b>, ✨ <b>advanced skincare</b>, 👁️ <b>lashes</b>, 🖌️ <b>brows</b>, 💅 <b>nails</b> and 🌸 <b>waxing &amp; tinting</b>. Want to book?"},
+ {k:['price','cost','much','rate','fee','€','euro','how much'],a:"Sample prices: Glow facial from <b>€50</b>, advanced skincare from <b>€65</b>, lashes from <b>€40</b>, brows from <b>€20</b>, nails from <b>€25</b>. Confirmed at booking! ✨"},
+ {k:['facial','glow','skin','skincare','hydrat','dewy'],a:"Our signature <b>Glow Facial</b> 💧 deeply cleanses and hydrates for fresh, dewy, healthy-looking skin. From €50. We also offer advanced targeted skincare. Want to book?"},
+ {k:['lash','brow','lamination','tint','extension'],a:"For lashes &amp; brows 👁️🖌️ we offer lash lifts, tints, extensions, plus brow shaping, lamination &amp; tinting. From €20. Shall I set up a booking?"},
+ {k:['nail','manicure','gel','shellac'],a:"Yes — <b>nails</b> 💅 including manicures, gel and shellac, finished to perfection. From €25."},
+ {k:['hour','open','time','when','close','appointment','availab'],a:"We work by <b>flexible appointment</b> 🕘 — get in touch and we'll find a time that suits you!"},
+ {k:['book','appointment','reserve','slot','get started'],a:"Lovely! 🎉 The easiest way is our quick form — <a href='#book' onclick='closeChat()'>tap here to book</a> — or call/text <b>083 868 4721</b>."},
+ {k:['where','location','address','area','carlow','tullow','clinic','find'],a:"We're at <b>1a Tullow St, Carlow</b> (R93 X0C0) 📍 — right in the town centre!"},
+ {k:['who','about','team','girls','owner'],a:"Our friendly, professional team is known for being <b>immaculate</b> at their craft ✨ — clients call us 'one of the best beauty salons around!' with a perfect 5.0 rating."},
+ {k:['phone','call','number','contact','text','reach'],a:"Call or text us anytime at <b>📞 +353 83 868 4721</b> 🌿"},
+ {k:['review','rating','star','good','best'],a:"We're rated a perfect <b>5.0★ on Google</b> ⭐ — described as 'one of the best beauty salons around!'"},
+ {k:['hi','hello','hey','morning','afternoon'],a:"Hi lovely! 👋 Looking for treatments, pricing, hours, or ready to book?"},
+ {k:['thank','thanks','great','perfect','lovely'],a:"You're so welcome! 🌿 Anything else — or shall I help you book?"}
+];
+function reply(t){t=t.toLowerCase();let best=null,s=0;for(const i of KB){let c=0;for(const k of i.k)if(t.includes(k))c++;if(c>s){s=c;best=i;}}botSay(best&&s>0?best.a:"Happy to help! 😊 I can cover <b>treatments</b>, <b>pricing</b>, <b>facials</b>, our <b>location</b>, or <b>booking</b>. Or call <b>083 868 4721</b>.");}
+function send(t){t=(t||input.value).trim();if(!t)return;userSay(t);input.value='';botTyping(()=>reply(t));}
+document.getElementById('chatSend').onclick=()=>send();
+input.addEventListener('keydown',e=>{if(e.key==='Enter')send();});
+document.querySelectorAll('#quickReplies button').forEach(b=>b.onclick=()=>send(b.dataset.q));
+</script>
+</body>
+</html>
